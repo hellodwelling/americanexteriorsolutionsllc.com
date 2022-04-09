@@ -236,7 +236,7 @@
                                 sender_number: cleaned_sender_number,
                                 sender_message: sender_message,
                                 sender_address: sender_address,
-                                sender_contact_date: sender_contact_date,
+                                sender_date: sender_contact_date,
                                 photo,
                                 services
                             })
@@ -449,7 +449,7 @@
                                         <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                                             <div class="relative grid gap-6 px-5 py-6 bg-white sm:gap-8 sm:p-8">
                                                 <!-- Render each sublink -->
-                                                <!-- <each loop="link in [{&#x27;title&#x27;: &quot;Our Home Softwash service is a gentle, low-pressure washing system that cleans and protects your home&#x27;s exterior surfaces without using any harsh chemicals.&quot;, &#x27;copy&#x27;: &#x27;Home Softwash&#x27;, &#x27;href&#x27;: &#x27;service-Home-Softwash&#x27;}, {&#x27;title&#x27;: &quot;Our gutter cleaning service includes a full inspection of your gutters and downspouts to ensure they are clear and functioning properly. We will remove any debris or blockages, and if necessary, we will also clean out your gutters&#x27; drainage system.&quot;, &#x27;copy&#x27;: &#x27;Gutter cleaning&#x27;, &#x27;href&#x27;: &#x27;service-Gutter-cleaning&#x27;}, {&#x27;title&#x27;: &#x27;Our Driveway &amp; Sidewalk Cleaning service is the perfect solution to keeping your property looking its best. We use a high-pressure washer to clean away any dirt, debris, or stains from your driveway and sidewalks.&#x27;, &#x27;copy&#x27;: &#x27;Driveway &amp; Sidewalk Cleaning&#x27;, &#x27;href&#x27;: &#x27;service-Driveway-&amp;-Sidewalk-Cleaning&#x27;}, {&#x27;title&#x27;: &#x27;Our Deck &amp; Patio Cleaning service is a great way to clean and restore your deck or patio. Our experienced professionals will use the right equipment and techniques to clean your deck or patio, removing any dirt, stains, or mildew.&#x27;, &#x27;copy&#x27;: &#x27;Deck &amp; Patio Cleaning&#x27;, &#x27;href&#x27;: &#x27;service-Deck-&amp;-Patio-Cleaning&#x27;}, {&#x27;title&#x27;: &#x27;Our Roof Cleaning service can help to restore the appearance of your roof by removing built-up debris, algae, and moss. We use a safe and effective cleaning solution that will not damage your roof or shingles.&#x27;, &#x27;copy&#x27;: &#x27;Roof Cleaning&#x27;, &#x27;href&#x27;: &#x27;service-Roof-Cleaning&#x27;}]"> -->
+                                                <!-- <each loop="link in [{&#x27;title&#x27;: &quot;Our Home Softwash service is a gentle, low-pressure washing system that cleans and protects your home&#x27;s exterior surfaces without using any harsh chemicals.&quot;, &#x27;copy&#x27;: &#x27;Home Softwash&#x27;, &#x27;href&#x27;: &#x27;service-Home-Softwash&#x27;}, {&#x27;title&#x27;: &quot;Our gutter cleaning service includes a full inspection of your gutters and downspouts to ensure they are clear and functioning properly. We will remove any debris or blockages, and if necessary, we will also clean out your gutters&#x27; drainage system.&quot;, &#x27;copy&#x27;: &#x27;Gutter cleaning&#x27;, &#x27;href&#x27;: &#x27;service-Gutter-cleaning&#x27;}, {&#x27;title&#x27;: &#x27;Our Mowing service is a great way to keep your lawn looking neat and tidy. We offer weekly or biweekly service, and we can work around your schedule.&#x27;, &#x27;copy&#x27;: &#x27;Mowing&#x27;, &#x27;href&#x27;: &#x27;service-Mowing&#x27;}, {&#x27;title&#x27;: &#x27;Our commercial lawn care service provides a variety of services to help maintain a healthy, lush lawn for your business. We offer fertilization, weed control, aeration and more to keep your property looking its best.&#x27;, &#x27;copy&#x27;: &#x27;Commercial Lawn Care&#x27;, &#x27;href&#x27;: &#x27;service-Commercial-Lawn-Care&#x27;}, {&#x27;title&#x27;: &#x27;Our Driveway &amp; Sidewalk Cleaning service is the perfect solution to keeping your property looking its best. We use a high-pressure washer to clean away any dirt, debris, or stains from your driveway and sidewalks.&#x27;, &#x27;copy&#x27;: &#x27;Driveway &amp; Sidewalk Cleaning&#x27;, &#x27;href&#x27;: &#x27;service-Driveway-&amp;-Sidewalk-Cleaning&#x27;}, {&#x27;title&#x27;: &#x27;Our Deck &amp; Patio Cleaning service is a great way to clean and restore your deck or patio. Our experienced professionals will use the right equipment and techniques to clean your deck or patio, removing any dirt, stains, or mildew.&#x27;, &#x27;copy&#x27;: &#x27;Deck &amp; Patio Cleaning&#x27;, &#x27;href&#x27;: &#x27;service-Deck-&amp;-Patio-Cleaning&#x27;}, {&#x27;title&#x27;: &quot;Leaf Clean Up service is a great way to keep your property clean and free of leaves. We will come and clear away all the leaves from your property, so you don&#x27;t have to worry about it.&quot;, &#x27;copy&#x27;: &#x27;Leaf Clean Up&#x27;, &#x27;href&#x27;: &#x27;service-Leaf-Clean-Up&#x27;}, {&#x27;title&#x27;: &#x27;Our Roof Cleaning service can help to restore the appearance of your roof by removing built-up debris, algae, and moss. We use a safe and effective cleaning solution that will not damage your roof or shingles.&#x27;, &#x27;copy&#x27;: &#x27;Roof Cleaning&#x27;, &#x27;href&#x27;: &#x27;service-Roof-Cleaning&#x27;}]"> -->
                                                   
                                                     <a
                                                         href=" service-Home-Softwash "
@@ -474,6 +474,28 @@
                                                <!--  -->
                                                  
                                                     <a
+                                                        href=" service-Mowing "
+                                                        role="menuitem"
+                                                        class="block p-3 -m-3 transition rounded-md  focus:outline-none focus:ring-2 ring-primary ring-opacity-75 ring-offset-2 hover:bg-gray-50"
+                                                    >
+                                                        <!-- <p class="text-base font-medium text-gray-900">Our Mowing service is a great way to keep your lawn looking neat and tidy. We offer weekly or biweekly service, and we can work around your schedule.</p> -->
+                                                        <p class="mt-1 text-sm text-gray-500">Mowing</p>
+                                                    </a>
+                                                <!-- </each> -->
+                                               <!--  -->
+                                                 
+                                                    <a
+                                                        href=" service-Commercial-Lawn-Care "
+                                                        role="menuitem"
+                                                        class="block p-3 -m-3 transition rounded-md  focus:outline-none focus:ring-2 ring-primary ring-opacity-75 ring-offset-2 hover:bg-gray-50"
+                                                    >
+                                                        <!-- <p class="text-base font-medium text-gray-900">Our commercial lawn care service provides a variety of services to help maintain a healthy, lush lawn for your business. We offer fertilization, weed control, aeration and more to keep your property looking its best.</p> -->
+                                                        <p class="mt-1 text-sm text-gray-500">Commercial Lawn Care</p>
+                                                    </a>
+                                                <!-- </each> -->
+                                               <!--  -->
+                                                 
+                                                    <a
                                                         href=" service-Driveway-&amp;-Sidewalk-Cleaning "
                                                         role="menuitem"
                                                         class="block p-3 -m-3 transition rounded-md  focus:outline-none focus:ring-2 ring-primary ring-opacity-75 ring-offset-2 hover:bg-gray-50"
@@ -491,6 +513,17 @@
                                                     >
                                                         <!-- <p class="text-base font-medium text-gray-900">Our Deck &amp; Patio Cleaning service is a great way to clean and restore your deck or patio. Our experienced professionals will use the right equipment and techniques to clean your deck or patio, removing any dirt, stains, or mildew.</p> -->
                                                         <p class="mt-1 text-sm text-gray-500">Deck &amp; Patio Cleaning</p>
+                                                    </a>
+                                                <!-- </each> -->
+                                               <!--  -->
+                                                 
+                                                    <a
+                                                        href=" service-Leaf-Clean-Up "
+                                                        role="menuitem"
+                                                        class="block p-3 -m-3 transition rounded-md  focus:outline-none focus:ring-2 ring-primary ring-opacity-75 ring-offset-2 hover:bg-gray-50"
+                                                    >
+                                                        <!-- <p class="text-base font-medium text-gray-900">Leaf Clean Up service is a great way to keep your property clean and free of leaves. We will come and clear away all the leaves from your property, so you don&#x27;t have to worry about it.</p> -->
+                                                        <p class="mt-1 text-sm text-gray-500">Leaf Clean Up</p>
                                                     </a>
                                                 <!-- </each> -->
                                                <!--  -->
@@ -808,6 +841,18 @@
                                                 </a>
                                             <!-- </each> -->
                                             
+                                                <a href="service-Mowing" role="menuitem" class="block p-3 -m-3 transition rounded-md">
+                                                    <!-- <p class="text-base font-medium text-gray-900">Our Mowing service is a great way to keep your lawn looking neat and tidy. We offer weekly or biweekly service, and we can work around your schedule.</p> -->
+                                                    <p class="mt-1 text-sm text-gray-500">Mowing</p>
+                                                </a>
+                                            <!-- </each> -->
+                                            
+                                                <a href="service-Commercial-Lawn-Care" role="menuitem" class="block p-3 -m-3 transition rounded-md">
+                                                    <!-- <p class="text-base font-medium text-gray-900">Our commercial lawn care service provides a variety of services to help maintain a healthy, lush lawn for your business. We offer fertilization, weed control, aeration and more to keep your property looking its best.</p> -->
+                                                    <p class="mt-1 text-sm text-gray-500">Commercial Lawn Care</p>
+                                                </a>
+                                            <!-- </each> -->
+                                            
                                                 <a href="service-Driveway-&amp;-Sidewalk-Cleaning" role="menuitem" class="block p-3 -m-3 transition rounded-md">
                                                     <!-- <p class="text-base font-medium text-gray-900">Our Driveway &amp; Sidewalk Cleaning service is the perfect solution to keeping your property looking its best. We use a high-pressure washer to clean away any dirt, debris, or stains from your driveway and sidewalks.</p> -->
                                                     <p class="mt-1 text-sm text-gray-500">Driveway &amp; Sidewalk Cleaning</p>
@@ -817,6 +862,12 @@
                                                 <a href="service-Deck-&amp;-Patio-Cleaning" role="menuitem" class="block p-3 -m-3 transition rounded-md">
                                                     <!-- <p class="text-base font-medium text-gray-900">Our Deck &amp; Patio Cleaning service is a great way to clean and restore your deck or patio. Our experienced professionals will use the right equipment and techniques to clean your deck or patio, removing any dirt, stains, or mildew.</p> -->
                                                     <p class="mt-1 text-sm text-gray-500">Deck &amp; Patio Cleaning</p>
+                                                </a>
+                                            <!-- </each> -->
+                                            
+                                                <a href="service-Leaf-Clean-Up" role="menuitem" class="block p-3 -m-3 transition rounded-md">
+                                                    <!-- <p class="text-base font-medium text-gray-900">Leaf Clean Up service is a great way to keep your property clean and free of leaves. We will come and clear away all the leaves from your property, so you don&#x27;t have to worry about it.</p> -->
+                                                    <p class="mt-1 text-sm text-gray-500">Leaf Clean Up</p>
                                                 </a>
                                             <!-- </each> -->
                                             
@@ -1527,6 +1578,122 @@
                         <!-- Whole Card is a link -->
                         <!-- Confirm item.href -->
                         <a
+                            href="service-Mowing"
+                            style="transform-style: preserve-3d"
+                            class="text-center relative block overflow-hidden transition duration-500  rotate-y-180 sm:rotate-y-0 sm:group-hover:rotate-y-180 aspect-w-16 aspect-h-9 sm:aspect-w-1 sm:aspect-h-1 rounded-2xl focus:ring-2 focus:outline-none ring-primary ring-offset-2"
+                            aria-label="Mowing"
+                        >
+                            <!-- Front Card -->
+                            <div aria-hidden="true" class="absolute inset-0 z-20 items-center justify-center hidden text-white sm:flex">
+                                <span class="text-2xl font-medium transition duration-500 group-hover:opacity-0">Mowing</span>
+                            </div>
+                            <!-- Back Card -->
+                            <div aria-hidden="true" class="absolute inset-0 z-20 flex flex-col items-center px-4 pb-3 text-white pt-7 rotate-y-180">
+                                <span class="text-2xl font-medium transition duration-500 sm:opacity-0 group-hover:opacity-100">Mowing</span>
+                                <!-- Notice: Text is automatically clamped here -->
+                                <p
+                                    class="
+                                        text-lg
+                                        block
+                                        mt-1.5
+                                        line-clamp-8
+                                        sm:line-clamp-7
+                                        font-medium
+                                        leading-6
+                                        text-center
+                                        transition
+                                        duration-500
+                                        sm:opacity-0
+                                        group-hover:opacity-100
+                                    "
+                                    style="
+                                    display: -webkit-box;
+                                    -webkit-line-clamp: 5;
+                                    -webkit-box-orient: vertical;  "
+                                >
+                                    Our Mowing service is a great way to keep your lawn looking neat and tidy. We offer weekly or biweekly service, and we can work around your schedule.
+                                </p>
+                            </div>
+
+                            <!-- Colored Overlay -->
+                            <div aria-hidden="true" class="absolute inset-0 z-10 opacity-75 bg-secondary"></div>
+                            <!-- Image -->
+                            
+                            <img
+                                class="object-cover grayscale"
+                    src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/9a61905b-84d1-419f-95e8-50e44d795903.jpeg" alt="Our Mowing service is a great way to keep your lawn looking neat and tidy. We offer weekly or biweekly service, and we can work around your schedule. for American Exterior Solutions LLC in Kokomo, Indiana" loading="lazy"
+                                alt=""
+                            />
+                            
+                        </a>
+                    </li>
+                
+                    <li
+                        x-transition
+                        style="perspective: 800px"
+                        class="group service-item"
+                    >
+                        <!-- Whole Card is a link -->
+                        <!-- Confirm item.href -->
+                        <a
+                            href="service-Commercial-Lawn-Care"
+                            style="transform-style: preserve-3d"
+                            class="text-center relative block overflow-hidden transition duration-500  rotate-y-180 sm:rotate-y-0 sm:group-hover:rotate-y-180 aspect-w-16 aspect-h-9 sm:aspect-w-1 sm:aspect-h-1 rounded-2xl focus:ring-2 focus:outline-none ring-primary ring-offset-2"
+                            aria-label="Commercial Lawn Care"
+                        >
+                            <!-- Front Card -->
+                            <div aria-hidden="true" class="absolute inset-0 z-20 items-center justify-center hidden text-white sm:flex">
+                                <span class="text-2xl font-medium transition duration-500 group-hover:opacity-0">Commercial Lawn Care</span>
+                            </div>
+                            <!-- Back Card -->
+                            <div aria-hidden="true" class="absolute inset-0 z-20 flex flex-col items-center px-4 pb-3 text-white pt-7 rotate-y-180">
+                                <span class="text-2xl font-medium transition duration-500 sm:opacity-0 group-hover:opacity-100">Commercial Lawn Care</span>
+                                <!-- Notice: Text is automatically clamped here -->
+                                <p
+                                    class="
+                                        text-lg
+                                        block
+                                        mt-1.5
+                                        line-clamp-8
+                                        sm:line-clamp-7
+                                        font-medium
+                                        leading-6
+                                        text-center
+                                        transition
+                                        duration-500
+                                        sm:opacity-0
+                                        group-hover:opacity-100
+                                    "
+                                    style="
+                                    display: -webkit-box;
+                                    -webkit-line-clamp: 5;
+                                    -webkit-box-orient: vertical;  "
+                                >
+                                    Our commercial lawn care service provides a variety of services to help maintain a healthy, lush lawn for your business. We offer fertilization, weed control, aeration and more to keep your property looking its best.
+                                </p>
+                            </div>
+
+                            <!-- Colored Overlay -->
+                            <div aria-hidden="true" class="absolute inset-0 z-10 opacity-75 bg-secondary"></div>
+                            <!-- Image -->
+                            
+                            <img
+                                class="object-cover grayscale"
+                    src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/ab7a75a5-f8f8-498d-b5d0-217a3dc9f063.jpeg" alt="Our commercial lawn care service provides a variety of services to help maintain a healthy, lush lawn for your business. We offer fertilization, weed control, aeration and more to keep your property looking its best. for American Exterior Solutions LLC in Kokomo, Indiana" loading="lazy"
+                                alt=""
+                            />
+                            
+                        </a>
+                    </li>
+                
+                    <li
+                        x-transition
+                        style="perspective: 800px"
+                        class="group service-item"
+                    >
+                        <!-- Whole Card is a link -->
+                        <!-- Confirm item.href -->
+                        <a
                             href="service-Driveway-&amp;-Sidewalk-Cleaning"
                             style="transform-style: preserve-3d"
                             class="text-center relative block overflow-hidden transition duration-500  rotate-y-180 sm:rotate-y-0 sm:group-hover:rotate-y-180 aspect-w-16 aspect-h-9 sm:aspect-w-1 sm:aspect-h-1 rounded-2xl focus:ring-2 focus:outline-none ring-primary ring-offset-2"
@@ -1629,6 +1796,64 @@
                             <img
                                 class="object-cover grayscale"
                     src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/3d018710-d6ef-43c8-87be-626d13e93249.png" alt="Our Deck &amp; Patio Cleaning service is a great way to clean and restore your deck or patio. Our experienced professionals will use the right equipment and techniques to clean your deck or patio, removing any dirt, stains, or mildew. for American Exterior Solutions LLC in Kokomo, Indiana" loading="lazy"
+                                alt=""
+                            />
+                            
+                        </a>
+                    </li>
+                
+                    <li
+                        x-transition
+                        style="perspective: 800px"
+                        class="group service-item"
+                    >
+                        <!-- Whole Card is a link -->
+                        <!-- Confirm item.href -->
+                        <a
+                            href="service-Leaf-Clean-Up"
+                            style="transform-style: preserve-3d"
+                            class="text-center relative block overflow-hidden transition duration-500  rotate-y-180 sm:rotate-y-0 sm:group-hover:rotate-y-180 aspect-w-16 aspect-h-9 sm:aspect-w-1 sm:aspect-h-1 rounded-2xl focus:ring-2 focus:outline-none ring-primary ring-offset-2"
+                            aria-label="Leaf Clean Up"
+                        >
+                            <!-- Front Card -->
+                            <div aria-hidden="true" class="absolute inset-0 z-20 items-center justify-center hidden text-white sm:flex">
+                                <span class="text-2xl font-medium transition duration-500 group-hover:opacity-0">Leaf Clean Up</span>
+                            </div>
+                            <!-- Back Card -->
+                            <div aria-hidden="true" class="absolute inset-0 z-20 flex flex-col items-center px-4 pb-3 text-white pt-7 rotate-y-180">
+                                <span class="text-2xl font-medium transition duration-500 sm:opacity-0 group-hover:opacity-100">Leaf Clean Up</span>
+                                <!-- Notice: Text is automatically clamped here -->
+                                <p
+                                    class="
+                                        text-lg
+                                        block
+                                        mt-1.5
+                                        line-clamp-8
+                                        sm:line-clamp-7
+                                        font-medium
+                                        leading-6
+                                        text-center
+                                        transition
+                                        duration-500
+                                        sm:opacity-0
+                                        group-hover:opacity-100
+                                    "
+                                    style="
+                                    display: -webkit-box;
+                                    -webkit-line-clamp: 5;
+                                    -webkit-box-orient: vertical;  "
+                                >
+                                    Leaf Clean Up service is a great way to keep your property clean and free of leaves. We will come and clear away all the leaves from your property, so you don&#x27;t have to worry about it.
+                                </p>
+                            </div>
+
+                            <!-- Colored Overlay -->
+                            <div aria-hidden="true" class="absolute inset-0 z-10 opacity-75 bg-secondary"></div>
+                            <!-- Image -->
+                            
+                            <img
+                                class="object-cover grayscale"
+                    src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/338f7649-df2a-4695-8ce1-8134b4550655.jpeg" alt="Leaf Clean Up service is a great way to keep your property clean and free of leaves. We will come and clear away all the leaves from your property, so you don&#x27;t have to worry about it. for American Exterior Solutions LLC in Kokomo, Indiana" loading="lazy"
                                 alt=""
                             />
                             
@@ -2080,11 +2305,11 @@
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
                     <button @click="activeImage = 7; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
-                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/f6b398a6-bfeb-40cc-862f-f4254a40f4d1.jpeg" alt="" /> -->
+                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/3d018710-d6ef-43c8-87be-626d13e93249.png" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/f6b398a6-bfeb-40cc-862f-f4254a40f4d1.jpeg" alt="Home Softwash for American Exterior Solutions LLC in Kokomo, Indiana" loading="lazy"/> 
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/f6b398a6-bfeb-40cc-862f-f4254a40f4d1.jpeg" alt="" /> -->
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/f6b398a6-bfeb-40cc-862f-f4254a40f4d1.jpeg" alt="" /> -->
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/3d018710-d6ef-43c8-87be-626d13e93249.png" alt="Home Softwash for American Exterior Solutions LLC in Kokomo, Indiana" loading="lazy"/> 
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/3d018710-d6ef-43c8-87be-626d13e93249.png" alt="" /> -->
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/3d018710-d6ef-43c8-87be-626d13e93249.png" alt="" /> -->
                             
                         </div>
 
@@ -2101,11 +2326,11 @@
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
                     <button @click="activeImage = 8; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
-                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/3d018710-d6ef-43c8-87be-626d13e93249.png" alt="" /> -->
+                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/f6b398a6-bfeb-40cc-862f-f4254a40f4d1.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/3d018710-d6ef-43c8-87be-626d13e93249.png" alt="Home Softwash for American Exterior Solutions LLC in Kokomo, Indiana" loading="lazy"/> 
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/3d018710-d6ef-43c8-87be-626d13e93249.png" alt="" /> -->
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/3d018710-d6ef-43c8-87be-626d13e93249.png" alt="" /> -->
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/f6b398a6-bfeb-40cc-862f-f4254a40f4d1.jpeg" alt="Home Softwash for American Exterior Solutions LLC in Kokomo, Indiana" loading="lazy"/> 
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/f6b398a6-bfeb-40cc-862f-f4254a40f4d1.jpeg" alt="" /> -->
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/f6b398a6-bfeb-40cc-862f-f4254a40f4d1.jpeg" alt="" /> -->
                             
                         </div>
 
@@ -2350,7 +2575,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 7">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/f6b398a6-bfeb-40cc-862f-f4254a40f4d1.jpeg" alt="Home Softwash for American Exterior Solutions LLC in Kokomo, Indiana" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/3d018710-d6ef-43c8-87be-626d13e93249.png" alt="Home Softwash for American Exterior Solutions LLC in Kokomo, Indiana" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2358,7 +2583,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 8">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/3d018710-d6ef-43c8-87be-626d13e93249.png" alt="Home Softwash for American Exterior Solutions LLC in Kokomo, Indiana" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/f6b398a6-bfeb-40cc-862f-f4254a40f4d1.jpeg" alt="Home Softwash for American Exterior Solutions LLC in Kokomo, Indiana" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2550,22 +2775,7 @@
 
                                     <!-- Social Icon -->
                                     <div class="flex-shrink-0">
-                                        <span class="sr-only">Facebook</span>
-                                        
-                                        <svg
-                                            aria-hidden="true"
-                                            class="text-blue-900 transition-transform w-7 h-7"
-                                            viewBox="0 0 30 30"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <path
-                                                fill-rule="evenodd"
-                                                clip-rule="evenodd"
-                                                d="M30 15c0-8.285-6.715-15-15-15S0 6.715 0 15c0 7.486 5.486 13.692 12.657 14.817v-10.48h-3.81V15h3.81v-3.305c0-3.759 2.238-5.835 5.666-5.835 1.64 0 3.357.293 3.357.293v3.69h-1.89c-1.865 0-2.445 1.156-2.445 2.343V15h4.159l-.665 4.335h-3.494v10.482C24.514 28.692 30 22.487 30 15Z"
-                                                fill="currentColor"
-                                            />
-                                        </svg>
+                                        <span class="sr-only">None</span>
                                         
                                     
                                     </div>
@@ -2656,22 +2866,7 @@
 
                                     <!-- Social Icon -->
                                     <div class="flex-shrink-0">
-                                        <span class="sr-only">Facebook</span>
-                                        
-                                        <svg
-                                            aria-hidden="true"
-                                            class="text-blue-900 transition-transform w-7 h-7"
-                                            viewBox="0 0 30 30"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <path
-                                                fill-rule="evenodd"
-                                                clip-rule="evenodd"
-                                                d="M30 15c0-8.285-6.715-15-15-15S0 6.715 0 15c0 7.486 5.486 13.692 12.657 14.817v-10.48h-3.81V15h3.81v-3.305c0-3.759 2.238-5.835 5.666-5.835 1.64 0 3.357.293 3.357.293v3.69h-1.89c-1.865 0-2.445 1.156-2.445 2.343V15h4.159l-.665 4.335h-3.494v10.482C24.514 28.692 30 22.487 30 15Z"
-                                                fill="currentColor"
-                                            />
-                                        </svg>
+                                        <span class="sr-only">None</span>
                                         
                                     
                                     </div>
@@ -2719,7 +2914,7 @@
                                 type="button"
                                 @click="expanded = !expanded"
                                 class="flex items-start justify-between w-full text-left text-white rounded  focus:outline-none focus-visible:ring-2 ring-white"
-                                aria-controls="48953"
+                                aria-controls="53067"
                                 :aria-expanded="expanded"
                             >
                             <span class="font-medium text-white">What&#x27;s the best way to reach you?</span>
@@ -2739,7 +2934,7 @@
                                 </span>
                             </button>
                         </dt>
-                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="48953">
+                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="53067">
                             <div aria-hidden="true" class="invisible h-2"></div>
                             <p class="mt-2 text-base text-gray-100">Give us a call or send us a text at  +1 765-434-6811. Thanks!</p>
                         </dd>
@@ -2752,7 +2947,7 @@
                                 type="button"
                                 @click="expanded = !expanded"
                                 class="flex items-start justify-between w-full text-left text-white rounded  focus:outline-none focus-visible:ring-2 ring-white"
-                                aria-controls="48954"
+                                aria-controls="53068"
                                 :aria-expanded="expanded"
                             >
                             <span class="font-medium text-white">Do you provide free estimates?</span>
@@ -2772,7 +2967,7 @@
                                 </span>
                             </button>
                         </dt>
-                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="48954">
+                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="53068">
                             <div aria-hidden="true" class="invisible h-2"></div>
                             <p class="mt-2 text-base text-gray-100">Yes, we&#x27;ll always estimate the job for free. Just give us a call to get started.</p>
                         </dd>
@@ -2785,7 +2980,7 @@
                                 type="button"
                                 @click="expanded = !expanded"
                                 class="flex items-start justify-between w-full text-left text-white rounded  focus:outline-none focus-visible:ring-2 ring-white"
-                                aria-controls="48955"
+                                aria-controls="53069"
                                 :aria-expanded="expanded"
                             >
                             <span class="font-medium text-white">How are you different?</span>
@@ -2805,7 +3000,7 @@
                                 </span>
                             </button>
                         </dt>
-                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="48955">
+                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="53069">
                             <div aria-hidden="true" class="invisible h-2"></div>
                             <p class="mt-2 text-base text-gray-100">We&#x27;re a customer-first company that will do whatever it takes to make sure the job is well done.</p>
                         </dd>
@@ -3119,6 +3314,22 @@
                           
                           <li>
                               <a
+                                  href="service-Mowing"
+                                  class="p-1 text-base text-gray-100 rounded hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-opacity-75"
+                                  >Mowing</a
+                              >
+                          </li>
+                          
+                          <li>
+                              <a
+                                  href="service-Commercial-Lawn-Care"
+                                  class="p-1 text-base text-gray-100 rounded hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-opacity-75"
+                                  >Commercial Lawn Care</a
+                              >
+                          </li>
+                          
+                          <li>
+                              <a
                                   href="service-Driveway-&amp;-Sidewalk-Cleaning"
                                   class="p-1 text-base text-gray-100 rounded hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-opacity-75"
                                   >Driveway &amp; Sidewalk Cleaning</a
@@ -3130,6 +3341,14 @@
                                   href="service-Deck-&amp;-Patio-Cleaning"
                                   class="p-1 text-base text-gray-100 rounded hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-opacity-75"
                                   >Deck &amp; Patio Cleaning</a
+                              >
+                          </li>
+                          
+                          <li>
+                              <a
+                                  href="service-Leaf-Clean-Up"
+                                  class="p-1 text-base text-gray-100 rounded hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-opacity-75"
+                                  >Leaf Clean Up</a
                               >
                           </li>
                           
@@ -3392,57 +3611,90 @@
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-168928"
-                                                    name="168928"
+                                                    id="contact-service-178886"
+                                                    name="178886"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Home Softwash"
                                             />
-                                            <label for="contact-label-service-168928" class="ml-3 text-sm font-medium text-gray-700">Home Softwash</label>
+                                            <label for="contact-label-service-178886" class="ml-3 text-sm font-medium text-gray-700">Home Softwash</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-168929"
-                                                    name="168929"
+                                                    id="contact-service-178887"
+                                                    name="178887"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Gutter cleaning"
                                             />
-                                            <label for="contact-label-service-168929" class="ml-3 text-sm font-medium text-gray-700">Gutter cleaning</label>
+                                            <label for="contact-label-service-178887" class="ml-3 text-sm font-medium text-gray-700">Gutter cleaning</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-168930"
-                                                    name="168930"
+                                                    id="contact-service-178888"
+                                                    name="178888"
+                                                    type="checkbox"
+                                                    class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
+                                                    value="Mowing"
+                                            />
+                                            <label for="contact-label-service-178888" class="ml-3 text-sm font-medium text-gray-700">Mowing</label>
+                                        </div>
+                                        
+                                        <div class="flex items-center">
+                                            <input
+                                                    id="contact-service-178889"
+                                                    name="178889"
+                                                    type="checkbox"
+                                                    class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
+                                                    value="Commercial Lawn Care"
+                                            />
+                                            <label for="contact-label-service-178889" class="ml-3 text-sm font-medium text-gray-700">Commercial Lawn Care</label>
+                                        </div>
+                                        
+                                        <div class="flex items-center">
+                                            <input
+                                                    id="contact-service-178890"
+                                                    name="178890"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Driveway & Sidewalk Cleaning"
                                             />
-                                            <label for="contact-label-service-168930" class="ml-3 text-sm font-medium text-gray-700">Driveway & Sidewalk Cleaning</label>
+                                            <label for="contact-label-service-178890" class="ml-3 text-sm font-medium text-gray-700">Driveway & Sidewalk Cleaning</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-168931"
-                                                    name="168931"
+                                                    id="contact-service-178891"
+                                                    name="178891"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Deck & Patio Cleaning"
                                             />
-                                            <label for="contact-label-service-168931" class="ml-3 text-sm font-medium text-gray-700">Deck & Patio Cleaning</label>
+                                            <label for="contact-label-service-178891" class="ml-3 text-sm font-medium text-gray-700">Deck & Patio Cleaning</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-168932"
-                                                    name="168932"
+                                                    id="contact-service-178892"
+                                                    name="178892"
+                                                    type="checkbox"
+                                                    class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
+                                                    value="Leaf Clean Up"
+                                            />
+                                            <label for="contact-label-service-178892" class="ml-3 text-sm font-medium text-gray-700">Leaf Clean Up</label>
+                                        </div>
+                                        
+                                        <div class="flex items-center">
+                                            <input
+                                                    id="contact-service-178893"
+                                                    name="178893"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Roof Cleaning"
                                             />
-                                            <label for="contact-label-service-168932" class="ml-3 text-sm font-medium text-gray-700">Roof Cleaning</label>
+                                            <label for="contact-label-service-178893" class="ml-3 text-sm font-medium text-gray-700">Roof Cleaning</label>
                                         </div>
                                         
                                     </div>
@@ -3474,57 +3726,90 @@
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-168928"
-                                                    name="168928"
+                                                    id="contact-service-178886"
+                                                    name="178886"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Home Softwash"
                                             />
-                                            <label for="contact-label-service-168928" class="ml-3 text-sm font-medium text-gray-700">Home Softwash</label>
+                                            <label for="contact-label-service-178886" class="ml-3 text-sm font-medium text-gray-700">Home Softwash</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-168929"
-                                                    name="168929"
+                                                    id="contact-service-178887"
+                                                    name="178887"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Gutter cleaning"
                                             />
-                                            <label for="contact-label-service-168929" class="ml-3 text-sm font-medium text-gray-700">Gutter cleaning</label>
+                                            <label for="contact-label-service-178887" class="ml-3 text-sm font-medium text-gray-700">Gutter cleaning</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-168930"
-                                                    name="168930"
+                                                    id="contact-service-178888"
+                                                    name="178888"
+                                                    type="checkbox"
+                                                    class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
+                                                    value="Mowing"
+                                            />
+                                            <label for="contact-label-service-178888" class="ml-3 text-sm font-medium text-gray-700">Mowing</label>
+                                        </div>
+                                        
+                                        <div class="flex items-center">
+                                            <input
+                                                    id="contact-service-178889"
+                                                    name="178889"
+                                                    type="checkbox"
+                                                    class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
+                                                    value="Commercial Lawn Care"
+                                            />
+                                            <label for="contact-label-service-178889" class="ml-3 text-sm font-medium text-gray-700">Commercial Lawn Care</label>
+                                        </div>
+                                        
+                                        <div class="flex items-center">
+                                            <input
+                                                    id="contact-service-178890"
+                                                    name="178890"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Driveway & Sidewalk Cleaning"
                                             />
-                                            <label for="contact-label-service-168930" class="ml-3 text-sm font-medium text-gray-700">Driveway & Sidewalk Cleaning</label>
+                                            <label for="contact-label-service-178890" class="ml-3 text-sm font-medium text-gray-700">Driveway & Sidewalk Cleaning</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-168931"
-                                                    name="168931"
+                                                    id="contact-service-178891"
+                                                    name="178891"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Deck & Patio Cleaning"
                                             />
-                                            <label for="contact-label-service-168931" class="ml-3 text-sm font-medium text-gray-700">Deck & Patio Cleaning</label>
+                                            <label for="contact-label-service-178891" class="ml-3 text-sm font-medium text-gray-700">Deck & Patio Cleaning</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-168932"
-                                                    name="168932"
+                                                    id="contact-service-178892"
+                                                    name="178892"
+                                                    type="checkbox"
+                                                    class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
+                                                    value="Leaf Clean Up"
+                                            />
+                                            <label for="contact-label-service-178892" class="ml-3 text-sm font-medium text-gray-700">Leaf Clean Up</label>
+                                        </div>
+                                        
+                                        <div class="flex items-center">
+                                            <input
+                                                    id="contact-service-178893"
+                                                    name="178893"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Roof Cleaning"
                                             />
-                                            <label for="contact-label-service-168932" class="ml-3 text-sm font-medium text-gray-700">Roof Cleaning</label>
+                                            <label for="contact-label-service-178893" class="ml-3 text-sm font-medium text-gray-700">Roof Cleaning</label>
                                         </div>
                                         
                                     </div>
